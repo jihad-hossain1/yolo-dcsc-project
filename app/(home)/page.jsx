@@ -1,3 +1,4 @@
+import AboutDcsc from "@/components/aboutDcsc/AboutDcsc";
 import CaroselOne from "@/components/carosel/CaroselOne";
 import React from "react";
 
@@ -9,10 +10,11 @@ const Home = () => {
           <span>Dhaka Collage</span> <span> Science Club</span>
         </h2>
         {/* Carosel One  */}
-        <div className="mt-20">
+        <div className="my-20">
           <CaroselOne />
         </div>
-        <div>asldk</div>
+        {/* about dcsc section  */}
+        <AboutDcsc />
       </div>
     </div>
   );

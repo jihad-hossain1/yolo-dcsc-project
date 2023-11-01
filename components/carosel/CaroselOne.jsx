@@ -59,9 +59,7 @@ const CaroselOne = () => {
               </div>
             </SwiperSlide>
           ))}
-          <div className="">
-            <SwiperButton />
-          </div>
+          <div className="">{/* <SwiperButton /> */}</div>
         </Swiper>
       </div>
     </div>

@@ -59,10 +59,6 @@ const Navbar = () => {
           <Link
             className="py-2 px-6 rounded-md text-slate-50 bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7]"
             href={"#"}
-            // style={{
-            //   background:
-            //     "linear-gradient(93deg, #4C6CDC 9.22%, #00BBC7 99.52%)",
-            // }}
           >
             Ongoing event
           </Link>
