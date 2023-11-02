@@ -54,13 +54,13 @@ body {
     }
 
     .swiper-slide {
-        width: 28rem;
-            height: 36rem;
+        width: 28rem !important;
+        height: 36rem !important;
     }
 
     .swiper-slide img {
-        width: 28rem;
-            height: 36rem;
+        width: 28rem !important;
+        height: 36rem !important;
     }
 }
 
@@ -85,35 +85,35 @@ body {
 }
 
 .slider-controler .swiper-button-next {
-    left: 58%;
-        transform: translateX(-58%);
+    left: 58% !important;
+    transform: translateX(-58%) !important;
 }
 
 @media (max-width: 990px) {
     .slider-controler .swiper-button-next {
-        left: 70%;
-            transform: translateX(-70%);
+        left: 70% !important;
+        transform: translateX(-70%) !important;
     }
 }
 
 @media (max-width: 450px) {
     .slider-controler .swiper-button-next {
-        left: 80%;
-            transform: translateX(-80%);
+        left: 80% !important;
+        transform: translateX(-80%) !important;
     }
 }
 
 @media (max-width: 990px) {
     .slider-controler .swiper-button-prev {
-        left: 30%;
-            transform: translateX(-30%);
+        left: 30% !important;
+        transform: translateX(-30%) !important;
     }
 }
 
 @media (max-width: 450px) {
     .slider-controler .swiper-button-prev {
-        left: 20%;
-            transform: translateX(-20%);
+        left: 20% !important;
+        transform: translateX(-20%) !important;
     }
 }
 
@@ -138,7 +138,7 @@ body {
 
 .swiper-pagination {
     position: relative;
-    width: 15rem;
+    width: 15rem !important;
     bottom: 1rem;
 }
 

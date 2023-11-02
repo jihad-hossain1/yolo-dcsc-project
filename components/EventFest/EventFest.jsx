@@ -7,9 +7,11 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+// TODO for mobile responsive 
 import "./styles.css";
 import { BsArrowLeft, BsArrowRight, BsArrowUpRight } from "react-icons/bs";
 import Link from "next/link";
+import GallaryButton from "../Gallary/GallaryButton";
 
 const EventFest = () => {
   return (
@@ -76,9 +78,9 @@ const EventFest = () => {
               </div>
             </SwiperSlide>
           ))}
-
-          <div className="md:block hidden">
-            <div className="slider-controler mt-20 ">
+              <GallaryButton />
+          {/* <div className="md:flex justify-center hidden ">
+            <div className="slider-controler mt-20 space-x-20">
               <div className="swiper-button-prev slider-arrow">
                 <BsArrowLeft className="text-slate-50 " />
               </div>
@@ -86,7 +88,7 @@ const EventFest = () => {
                 <BsArrowRight className="text-slate-50 " />
               </div>
             </div>
-          </div>
+          </div> */}
         </Swiper>
       </div>
     </div>
