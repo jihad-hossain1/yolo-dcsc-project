@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -78,17 +78,8 @@ const EventFest = () => {
               </div>
             </SwiperSlide>
           ))}
+          {/* button for slider  */}
           <GallaryButton />
-          {/* <div className="md:flex justify-center hidden ">
-            <div className="slider-controler mt-20 space-x-20">
-              <div className="swiper-button-prev slider-arrow">
-                <BsArrowLeft className="text-slate-50 " />
-              </div>
-              <div className="swiper-button-next slider-arrow">
-                <BsArrowRight className="text-slate-50 " />
-              </div>
-            </div>
-          </div> */}
         </Swiper>
       </div>
     </div>

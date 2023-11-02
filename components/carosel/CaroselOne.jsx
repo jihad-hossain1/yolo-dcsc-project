@@ -46,7 +46,6 @@ const CaroselOne = () => {
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Navigation]}
-          //   navigation={true}
         >
           {caroselOneData?.map((itm) => (
             <SwiperSlide className="" key={itm?.id}>
@@ -59,7 +58,6 @@ const CaroselOne = () => {
               </div>
             </SwiperSlide>
           ))}
-          <div className="">{/* <SwiperButton /> */}</div>
         </Swiper>
       </div>
     </div>
