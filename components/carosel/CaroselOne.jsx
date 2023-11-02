@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
-import "./styles.css";
+// import "./styles.css";
 import { caroselOneData } from "@/data/caroselData";
 import SwiperButton from "./SwiperButton";
 
@@ -39,7 +39,7 @@ const CaroselOne = () => {
         <Swiper
           watchSlidesProgress={true}
           slidesPerView={slides}
-          className="mySwiper relative"
+          className="mySwiper "
           spaceBetween={30}
           autoplay={{
             delay: 4000,
@@ -50,7 +50,7 @@ const CaroselOne = () => {
         >
           {caroselOneData?.map((itm) => (
             <SwiperSlide className="" key={itm?.id}>
-              <div className=" shadow-sm ">
+              <div className=" ">
                 <img
                   className="rounded-lg object-cover "
                   src={itm?.img}
