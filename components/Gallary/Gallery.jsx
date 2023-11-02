@@ -2,12 +2,11 @@
 
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// const newSwip = new Swiper();
-// Import Swiper styles
+
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
-import "./stylesS.css";
+import "./styles.css";
 
 // import required modules
 import { Grid, Pagination } from "swiper/modules";

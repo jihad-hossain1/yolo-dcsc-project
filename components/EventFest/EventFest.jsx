@@ -1,15 +1,15 @@
-"use client";
-import { Swiper, SwiperSlide } from "swiper/react";
+// "use client";
 
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-// TODO for mobile responsive 
+// TODO for mobile responsive
 import "./styles.css";
-import { BsArrowLeft, BsArrowRight, BsArrowUpRight } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import Link from "next/link";
 import GallaryButton from "../Gallary/GallaryButton";
 
@@ -78,7 +78,7 @@ const EventFest = () => {
               </div>
             </SwiperSlide>
           ))}
-              <GallaryButton />
+          <GallaryButton />
           {/* <div className="md:flex justify-center hidden ">
             <div className="slider-controler mt-20 space-x-20">
               <div className="swiper-button-prev slider-arrow">
