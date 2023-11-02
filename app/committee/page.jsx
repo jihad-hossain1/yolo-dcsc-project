@@ -1,9 +1,12 @@
+"use client";
+
 import SingleCommitteeCard from "@/components/committee/SingleCommitteeCard";
 import MainContainer from "@/components/mainContainer/MainContainer";
 import { committeData } from "@/data/committeeData";
-import React from "react";
+import React, { useState } from "react";
 
 const CommitteePage = () => {
+  const [loadMore, setloadMore] = useState();
   return (
     <div>
       <div className="my-10 md:my-24">
@@ -23,14 +26,21 @@ const CommitteePage = () => {
           </div>
           <MainContainer>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-10 my-10 md:my-20">
-              {committeData?.map((itm, index) => (
-                <SingleCommitteeCard key={index} itm={itm} />
-              ))}
+              {committeData
+                ?.slice(0, loadMore ? committeData?.length : 12)
+                .map((itm, index) => (
+                  <SingleCommitteeCard key={index} itm={itm} />
+                ))}
             </div>
             <div className="text-center mt-8 md:mt-12">
-              <button className="bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7] hover:from-[#00BBC7] hover:to-[#4C6CDC] transition duration-300 px-6 py-2 rounded-lg  hover: md:px-8 md:py-3 text-gray-50 w-fit">
-                Load More
-              </button>
+              {!loadMore && (
+                <button
+                  onClick={setloadMore}
+                  className="bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7] hover:from-[#00BBC7] hover:to-[#4C6CDC] transition duration-300 px-6 py-2 rounded-lg  hover: md:px-8 md:py-3 text-gray-50 w-fit"
+                >
+                  Load More
+                </button>
+              )}
             </div>
           </MainContainer>
         </div>

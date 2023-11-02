@@ -1,9 +1,12 @@
+"use client";
+
 import SingleGalleryCard from "@/components/SingleGalleryCard/SingleGalleryCard";
 import MainContainer from "@/components/mainContainer/MainContainer";
 import { galleryData } from "@/data/galleryData";
-import React from "react";
+import React, { useState } from "react";
 
 const GallaryPage = () => {
+  const [loadMore, setloadMore] = useState();
   return (
     <>
       <MainContainer>
@@ -12,14 +15,21 @@ const GallaryPage = () => {
             Gallery
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-7">
-            {galleryData?.map((itm) => (
-              <SingleGalleryCard itm={itm} key={itm?.id} />
-            ))}
+            {galleryData
+              ?.slice(0, loadMore ? galleryData?.length : 12)
+              .map((itm) => (
+                <SingleGalleryCard itm={itm} key={itm?.id} />
+              ))}
           </div>
           <div className="text-center mt-8 md:mt-12">
-            <button className="bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7] hover:from-[#00BBC7] hover:to-[#4C6CDC] transition duration-300 px-6 py-2 rounded-lg  hover: md:px-8 md:py-3 text-gray-50 w-fit">
-              Load More
-            </button>
+            {!loadMore && (
+              <button
+                onClick={setloadMore}
+                className="bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7] hover:from-[#00BBC7] hover:to-[#4C6CDC] transition duration-300 px-6 py-2 rounded-lg  hover: md:px-8 md:py-3 text-gray-50 w-fit"
+              >
+                Load More
+              </button>
+            )}
           </div>
         </div>
       </MainContainer>

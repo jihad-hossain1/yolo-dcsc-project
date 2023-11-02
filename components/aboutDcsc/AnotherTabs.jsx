@@ -28,7 +28,7 @@ export default function AnotherTabs() {
         shareCount: 16,
       },
     ],
-    What: [
+    What_we_do: [
       {
         id: 1,
         title:
@@ -50,7 +50,7 @@ export default function AnotherTabs() {
               className={({ selected }) =>
                 classNames(
                   "w-full rounded-lg py-3  font-semibold font-serif  text-gray-50",
-                  "ring-blue-100/60 ",
+                  "ring-blue-100/5 ",
                   selected
                     ? "bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7] shadow"
                     : "text-gray-950 hover:bg-white/[0.12] "
