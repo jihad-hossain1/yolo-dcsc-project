@@ -42,12 +42,12 @@ const AboutTabs = () => {
               <p className="break-all">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 quasi quaerat dolore aspernatur. Quo, ad, aspernatur saepe
-                maiores distinctio alias sequi adipisci voluptas voluptate
-                repudiandae delectus eligendi dolore optio consequatur. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Est quasi
-                quaerat dolore aspernatur. Quo, ad, aspernatur saepe maiores
-                distinctio alias sequi adipisci voluptas voluptate repudiandae
-                delectus eligendi dolore optio consequatur.
+                maiores distinctio alias sequi adipisci voluptas
+                voluptaterepudiandae delectus eligendi dolore optio consequatur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                quasi quaerat dolore aspernatur. Quo, ad, aspernatur saepe
+                maioresdistinctio alias sequi adipisci voluptas voluptate
+                repudiandae delectus eligendi dolore optio consequatur.
               </p>
             </div>
           </TabPanel>

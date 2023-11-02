@@ -1,6 +1,6 @@
 import React from "react";
 import MainContainer from "../mainContainer/MainContainer";
-import AboutTabs from "./AboutTabs";
+import AnotherTabs from "./AnotherTabs";
 
 const AboutDcsc = () => {
   return (
@@ -12,7 +12,7 @@ const AboutDcsc = () => {
               dcsc
             </h4>
             <div>
-              <AboutTabs />
+              <AnotherTabs />
             </div>
           </div>
 
