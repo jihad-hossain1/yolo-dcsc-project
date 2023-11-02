@@ -23,8 +23,8 @@ const Committee = () => {
         </div>
         <MainContainer>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-10 my-10 md:my-20">
-            {committeData?.slice(0, 4).map((itm) => (
-              <SingleCommitteeCard key={itm?._id} itm={itm} />
+            {committeData?.slice(0, 4).map((itm, index) => (
+              <SingleCommitteeCard key={index} itm={itm} />
             ))}
           </div>
           <div className="text-center mt-8 md:mt-12">

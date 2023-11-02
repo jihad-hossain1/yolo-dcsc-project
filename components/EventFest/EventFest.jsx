@@ -12,11 +12,19 @@ import "./styles.css";
 import { BsArrowUpRight } from "react-icons/bs";
 import Link from "next/link";
 import GallaryButton from "../Gallary/GallaryButton";
+import bg2 from "../../public/bg2.webp";
 
 const EventFest = () => {
   return (
-    <div className="px-2 my-10">
-      <div>
+    <div
+      style={{
+        backgroundImage: `url(${bg2.src})`,
+        width: "100%",
+        height: "100%",
+      }}
+      className="bg-no-repeat bg-cover px-2 my-10"
+    >
+      <div className="pt-20">
         <h2 className="font-serif font-bold text-2xl md:text-5xl uppercase text-gray-50 text-center tracking-wide mb-10">
           DCSC EVENT FEST-2023
         </h2>
@@ -53,7 +61,7 @@ const EventFest = () => {
         >
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((itm, index) => (
             <SwiperSlide key={index}>
-              <div className=" bg-[#1C2069] border-2 border-[#484EDB] rounded-xl p-5">
+              <div className=" max-w-[370px] md:max-w-[460px] bg-[#1C2069] border-2 border-[#484EDB] rounded-xl p-5">
                 <img
                   className="rounded-xl"
                   src="https://i.ibb.co/Qj7SJDB/c2.webp"
@@ -61,15 +69,15 @@ const EventFest = () => {
                 />
                 <div className="flex items-center justify-between">
                   <div className="mt-6 pb-4 ">
-                    <h4 className="font-bold text-xl md:text-2xl font-serif text-[#FFD707] mb-5 tracking-wide">
-                      DCSC Event Photography Program
+                    <h4 className="text-start font-bold text-xl  font-serif text-[#FFD707] mb-5 tracking-wide">
+                      DCSC Event Photography <br /> Program
                     </h4>
-                    <p className="text-white  md:text-xl ">
+                    <p className="text-start text-white  md:text-xl ">
                       {`18-10-2023`} to {`20-10-2023`}
                     </p>
                   </div>
                   <Link
-                    href={`#`}
+                    href={`/allEvent`}
                     className="bg-[#216DDE] hover:bg-[#3077e2] p-3 md:p-4 rounded-sm transition duration-300 border-l border-t"
                   >
                     <BsArrowUpRight className="text-slate-50" size={25} />

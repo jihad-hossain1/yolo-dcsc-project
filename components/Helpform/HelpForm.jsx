@@ -2,7 +2,6 @@
 
 import React from "react";
 import bghf from "../../public/h.webp";
-import Image from "next/image";
 import MainContainer from "../mainContainer/MainContainer";
 import toast from "react-hot-toast";
 
