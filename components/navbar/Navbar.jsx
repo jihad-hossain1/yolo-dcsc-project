@@ -57,7 +57,7 @@ const Navbar = () => {
         {/* ongoing events  */}
         <div>
           <Link
-            className="py-2 px-6 rounded-md text-slate-50 bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7]"
+            className="bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7] hover:from-[#00BBC7] hover:to-[#4C6CDC] transition duration-300 px-4 py-1 rounded-lg  hover: md:px-8 md:py-3 text-gray-50 w-fit"
             href={"#"}
           >
             Ongoing event

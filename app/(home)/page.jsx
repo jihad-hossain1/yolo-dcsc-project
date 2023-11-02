@@ -1,5 +1,6 @@
 import EventFest from "@/components/EventFest/EventFest";
 import Gallery from "@/components/Gallary/Gallery";
+import HelpForm from "@/components/Helpform/HelpForm";
 import AboutDcsc from "@/components/aboutDcsc/AboutDcsc";
 import CaroselOne from "@/components/carosel/CaroselOne";
 import Committee from "@/components/committee/Committee";
@@ -29,6 +30,9 @@ const Home = () => {
 
         {/* Commetie card  */}
         <Committee />
+
+        {/* help section  */}
+        <HelpForm />
       </div>
     </div>
   );

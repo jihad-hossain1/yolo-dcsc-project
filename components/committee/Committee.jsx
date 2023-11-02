@@ -8,7 +8,7 @@ const Committee = () => {
   return (
     <div className="my-10 md:my-24">
       <div>
-        <div>
+        <div className="px-2">
           <h2 className="font-serif font-bold text-2xl md:text-5xl  text-gray-50 text-center tracking-wide mb-10">
             Executive Committee 2023
           </h2>
@@ -22,7 +22,7 @@ const Committee = () => {
           </div>
         </div>
         <MainContainer>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-10 md:my-20">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-10 my-10 md:my-20">
             {committeData?.slice(0, 4).map((itm) => (
               <SingleCommitteeCard key={itm?._id} itm={itm} />
             ))}
@@ -30,7 +30,7 @@ const Committee = () => {
           <div className="text-center mt-8 md:mt-12">
             <Link
               href={`/committee`}
-              className="py-2 px-6 rounded-md text-slate-50 bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7]"
+              className="bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7] hover:from-[#00BBC7] hover:to-[#4C6CDC] transition duration-300 px-6 py-2 rounded-lg  hover: md:px-8 md:py-3 text-gray-50 w-fit"
             >
               All Member
             </Link>

@@ -3,6 +3,7 @@ import './globals.css'
 import Navbar from '@/components/navbar/Navbar'
 import Footer from '@/components/footer/Footer'
 import classNames from '@/utils/classNames'
+import Toaster from '@/components/Toaster/Toaster'
 
 const poppins = Poppins({ subsets: ['latin'],weight: ["100", "300", "400", "500", "700", "900"],variable: "--font-poppins" })
 
@@ -22,7 +23,8 @@ export default function RootLayout({ children }) {
               <main className="">{children}</main>
             </div>
             <Footer />
-          </div>
+        </div>
+        <Toaster />
         </body>
     </html>
   )
