@@ -10,9 +10,11 @@ import "./styles.css";
 
 // import required modules
 import { Grid, Pagination } from "swiper/modules";
-import { caroselOneData } from "@/data/caroselData";
+// import { caroselOneData } from "@/data/caroselData";
 import MainContainer from "../mainContainer/MainContainer";
 import GallaryButton from "./GallaryButton";
+import { galleryData } from "@/data/galleryData";
+import Image from "next/image";
 
 const Gallery = () => {
   const [slides, setSlides] = useState(0);
@@ -37,7 +39,7 @@ const Gallery = () => {
   }, []);
   return (
     <MainContainer>
-      <div className="mt-20 md:mt-28 ">
+      <div className="mt-20 md:my-28 ">
         <div>
           <div>
             <h2 className="font-serif font-bold text-2xl md:text-5xl  text-gray-50 text-center tracking-wide mb-10">
@@ -64,60 +66,18 @@ const Gallery = () => {
                 modules={[Pagination, Grid]}
                 className="mySwiper"
               >
-                <SwiperSlide>
-                  <div className=" ">
-                    <img
-                      className="rounded-lg object-cover "
-                      src="https://i.ibb.co/YbPwxTy/c-3.webp"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className=" ">
-                    <img
-                      className="rounded-lg object-cover "
-                      src="https://i.ibb.co/YbPwxTy/c-3.webp"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className=" ">
-                    <img
-                      className="rounded-lg object-cover "
-                      src="https://i.ibb.co/YbPwxTy/c-3.webp"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className=" ">
-                    <img
-                      className="rounded-lg object-cover "
-                      src="https://i.ibb.co/YbPwxTy/c-3.webp"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className=" ">
-                    <img
-                      className="rounded-lg object-cover "
-                      src="https://i.ibb.co/YbPwxTy/c-3.webp"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className=" ">
-                    <img
-                      className="rounded-lg object-cover "
-                      src="https://i.ibb.co/YbPwxTy/c-3.webp"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
+                {galleryData?.map((itm) => (
+                  <SwiperSlide key={itm?.id}>
+                    <div className=" ">
+                      <img
+                        
+                        className="rounded-lg object-cover "
+                        src={itm?.img}
+                        alt=""
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
 
                 <div className="">
                   <GallaryButton />

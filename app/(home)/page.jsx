@@ -2,6 +2,7 @@ import EventFest from "@/components/EventFest/EventFest";
 import Gallery from "@/components/Gallary/Gallery";
 import AboutDcsc from "@/components/aboutDcsc/AboutDcsc";
 import CaroselOne from "@/components/carosel/CaroselOne";
+import Committee from "@/components/committee/Committee";
 import React from "react";
 
 const Home = () => {
@@ -25,6 +26,9 @@ const Home = () => {
 
         {/* Gallery home slider  */}
         <Gallery />
+
+        {/* Commetie card  */}
+        <Committee />
       </div>
     </div>
   );
